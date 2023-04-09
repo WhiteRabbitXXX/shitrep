@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//using Testname; сейчас не работает потому что не знаю
+using Testname;                                                      //сейчас не работает потому что не знаю upd: исправил 
 using System;
 
 namespace Test
@@ -66,9 +66,10 @@ namespace Test
         Comparasing();
         break;
         
-        //case 2:
-        //Testname.Test.TestingName();                                //не работает так как не подключается пространство имен
-        //break;
+        case 2:                                                      
+        Testname.getTest ntt = new Testname.getTest();
+        ntt.TestingName();
+        break;                                                                                              
         }
         }
         catch
