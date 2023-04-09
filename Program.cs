@@ -67,9 +67,8 @@ namespace Test
         break;
         
         case 2:                                                      
-        Testname.getTest ntt = new Testname.getTest();
-        ntt.TestingName();
-        break;                                                                                              
+        getTest.TestingName();
+        break;                                                                                
         }
         }
         catch
