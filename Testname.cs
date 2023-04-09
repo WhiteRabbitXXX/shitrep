@@ -4,7 +4,7 @@ namespace Testname
   class getTest                                                    
    {    
      //функция выводит число с точностью до х после запятой
-    static void TestingName()                                       
+    public static void TestingName()                                       
       {
        Console.WriteLine("Программа отсекает числа после запятой");                            
        Console.WriteLine("Введите число (дробь запишите через точку)"); 
