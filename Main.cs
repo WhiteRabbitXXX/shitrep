@@ -1,10 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Testname;                                                      //сейчас не работает потому что не знаю upd: исправил 
+using exercise;                                                      //сейчас не работает потому что не знаю upd: исправил 
 using System;
 
-namespace Test
+namespace Main
 {
-  class TestProgramm
+  class MainProgr
   {
     static void Comparasing()                                         //функция по сравнению трех введеных чисел (возможно стоит сделать это через Math)
     {
@@ -67,7 +67,7 @@ namespace Test
         break;
         
         case 2:                                                      
-        getTest.TestingName();
+        ex3.ExecuteEx3();
         break;                                                                                
         }
         }
