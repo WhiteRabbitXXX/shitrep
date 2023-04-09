@@ -1,17 +1,17 @@
 using System;
-namespace Testname
-{
-  class Test
-   {
-    static void TestingName()
+namespace Testname                                                 //файл существует отдельно только по причине того что это тест
+{                                                                  //подключения пространство (не подключилось насколько я понимаю надо лезть в csproj 
+  class Test                                                       //и менять там настройки, но конкретной информации не обнаружил возможно прошерстим доки dotnet)
+   {                                                               
+    static void TestingName()                                      //функция выводит е с точностью до х после запятой (в перспективе надо реализовать ввод любого числа и экспоненты)
       {
-       Console.WriteLine("its alive");
-       double b = Math.Exp(1);
-       int x = 14;
-       double n = Math.Pow(10,-x);
-       double ans = Math.Truncate((Math.Round(b, x+1)/n))*n;
-       Console.WriteLine(b);
-       Console.WriteLine(ans);
+       Console.WriteLine("its alive");                             //строка была написана для проверки подключения простраства к основе                             
+       double b = Math.Exp(1);                                     //присваиваем значение для округления
+       int x = 14;                                                 //задаем значение точности округления
+       double n = Math.Pow(10,-x);                                 //промежуточное значение 10^-x (строго говоря функция не округляет, а отсекает до запятой)
+       double ans = Math.Truncate((Math.Round(b, x+1)/n))*n;       //магия (округляю до х+1 знака после запятой, делю на 10^-х, выделяю целое-отсекаю грубо округленное,
+       Console.WriteLine(b);                                       //домножаю на 10^-х возвращая все на круги своя) вывожу полное число до отсечения
+       Console.WriteLine(ans);                                     //результат отсечения
       }
    }
 }
