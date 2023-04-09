@@ -66,9 +66,9 @@ namespace Test
         Comparasing();
         break;
         
-        case 2:
-        Testname.Test.TestingName();
-        break;
+        //case 2:
+        //Testname.Test.TestingName();                                //не работает так как не подключается пространство имен
+        //break;
         }
         }
         catch
