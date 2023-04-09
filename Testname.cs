@@ -1,10 +1,10 @@
 using System;
-namespace Testname                                                 
+namespace exercise                                                 
 {                                                                  
-  class getTest                                                    
+  class ex3                                                    
    {    
      //функция выводит число с точностью до х после запятой
-    public static void TestingName()                                       
+    public static void ExecuteEx3()                                       
       {
        Console.WriteLine("Программа отсекает числа после запятой");                            
        Console.WriteLine("Введите число (дробь запишите через точку)"); 
