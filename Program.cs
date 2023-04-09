@@ -1,20 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Testname;
+//using Testname; сейчас не работает потому что не знаю
 using System;
 
 namespace Test
 {
   class TestProgramm
   {
-    static void Comparasing()
+    static void Comparasing()                                         //функция по сравнению трех введеных чисел (возможно стоит сделать это через Math)
     {
-      Console.WriteLine("Enter three num");
-      string numbers = Console.ReadLine();
-      string[] nums = numbers.Split(' ');
-      if (nums.Length == 3)
-      {
-       int[] gotnums = Array.ConvertAll(nums, int.Parse);
-       if (gotnums[0] > gotnums[1] && gotnums[0] > gotnums[2]) 
+      Console.WriteLine("Enter three num");                           //общаемя с пользователем
+      string numbers = Console.ReadLine();                            //получаем информатьён
+      string[] nums = numbers.Split(' ');                             //переводим строку в текстовый массив
+      if (nums.Length == 3)                                           //проверяем длину массива во избежание проблем (в конце концов сравниваем то три числа)
+      {                                                               //в дальнейшем стоит доработать чтобы обрабатывалось любое кол-во чисел (пока висит)
+       int[] gotnums = Array.ConvertAll(nums, int.Parse);             //переводим текст в цифорки
+       if (gotnums[0] > gotnums[1] && gotnums[0] > gotnums[2])        //сравниваем
          {
            Console.WriteLine(gotnums[0]);
          }
@@ -27,13 +27,13 @@ namespace Test
            Console.WriteLine(gotnums[2]);
          }
       }
-      else
+      else                                                            //если длина массива была больше трех скипаем сюда
       {
         Console.WriteLine("its not three");
       }
      
     }
-    static void Calculate()
+    static void Calculate()                                          //функция сравнивает вводимое число с нулем
     {
          Console.WriteLine("Enter Num");
          int num = Convert.ToInt32(Console.ReadLine());
@@ -47,16 +47,16 @@ namespace Test
          }
          else 
          {
-          Console.WriteLine(num +" is Equal 0");
+          Console.WriteLine(num +" is Equal 0");                      //ничего интересного
          }
     }
-    static void Main()
+    static void Main()                                                //основное тело
     {
-        try
+        try                                                           //не научился по человечески пользоваться исключениями поэтому сделал что сделал
         {
         Console.WriteLine("Chose Exercise");
         int ch = Convert.ToInt32(Console.ReadLine());
-        switch(ch)
+        switch(ch)                                                    //выбираем кейс через переключатель
         {
         case 0:
         Calculate();
@@ -73,7 +73,7 @@ namespace Test
         }
         catch
         {
-        Console.WriteLine("Oops");
+        Console.WriteLine("Oops");                                    //обработка исключения
         }
         finally
         {
