@@ -43,6 +43,10 @@ namespace Main
               case 3:                                                      
               ex3.ExecuteEx3();
               break;
+
+              case 4:                                                      
+              ex4.ExecuteEx4();
+              break;
              }                                                                        
            }
            while (ch > 0);
